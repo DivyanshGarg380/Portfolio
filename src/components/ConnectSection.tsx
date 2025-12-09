@@ -29,52 +29,67 @@ export default function ConnectSection() {
             {/* Contact Form */}
             <div className="glass rounded-2xl p-6 md:p-8">
               <h3 className="text-xl font-bold mb-6">Send a Message</h3>
-              <form className="space-y-4"
+              <form
+                className="space-y-4"
                 action="https://formsubmit.co/himynameisdivyansh@gmail.com"
                 method="POST"
               >
                 <input type="hidden" name="_captcha" value="false" />
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
                     <Input
                       id="name"
+                      name="name"
                       placeholder="Your name"
                       className="bg-secondary/50 border-border"
+                      required
                     />
                   </div>
+
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
                       placeholder="your@email.com"
                       className="bg-secondary/50 border-border"
+                      required
                     />
                   </div>
                 </div>
+
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium mb-2">Subject</label>
                   <Input
                     id="subject"
+                    name="subject"
                     placeholder="What's this about?"
                     className="bg-secondary/50 border-border"
+                    required
                   />
                 </div>
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
                   <Textarea
                     id="message"
+                    name="message"
                     placeholder="Your message..."
                     rows={5}
                     className="bg-secondary/50 border-border resize-none"
+                    required
                   />
                 </div>
-                <Button className="w-full bg-primary hover:bg-primary/90">
+
+                <Button className="w-full bg-primary hover:bg-primary/90" type="submit">
                   <Send className="mr-2 h-4 w-4" />
                   Send Message
                 </Button>
               </form>
+
             </div>
 
             {/* Contact Info */}
