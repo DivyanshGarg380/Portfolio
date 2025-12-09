@@ -26,6 +26,14 @@ const projects = [
     live: "https://crypto-tracker-chi-three.vercel.app/",
     status: "Deployed",
   },
+  {
+    title: "Data Visualization",
+    description: "Detailed analysis of various datasets by using python libraries such as Matplotlib , Seaborn , Pandas , Numpy , etc",
+    tech: ["Python"],
+    github: "https://github.com/DivyanshGarg380/DAV_CODES",
+    live: null,
+    status: null,
+  },
 ];
 
 export default function ProjectsSection() {
