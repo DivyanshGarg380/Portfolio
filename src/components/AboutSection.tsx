@@ -43,7 +43,7 @@ const AboutSection = () => {
                 <div className="w-full h-full rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                   <div className="text-center p-8">
                     <img
-                      src="../public/Pic.jpg"
+                      src="../public/pic.jpg"
                       alt="Error"
                       className="w-full h-full rounded-full object-cover"
                     />
