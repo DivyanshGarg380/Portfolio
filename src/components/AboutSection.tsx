@@ -44,7 +44,7 @@ const AboutSection = () => {
                   <div className="text-center p-8">
                     <img
                       src="/pic.jpg"
-                      alt="Error"
+                      alt="error"
                       className="w-full h-full rounded-full object-cover"
                     />
                   </div>
