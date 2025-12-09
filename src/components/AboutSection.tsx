@@ -42,11 +42,7 @@ const AboutSection = () => {
               <div className="aspect-square max-w-md mx-auto rounded-3xl glass p-2">
                 <div className="w-full h-full rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                   <div className="text-center p-8">
-                    <img
-                      src="/pic.jpg"
-                      alt="error"
-                      className="w-full h-full rounded-full object-cover"
-                    />
+                    <img src="/pic.jpeg" alt="error" className="w-full h-full rounded-full object-cover"/>
                   </div>
                 </div>
               </div>
