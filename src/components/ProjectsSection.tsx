@@ -52,7 +52,17 @@ export default function ProjectsSection() {
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                       <Folder className="h-6 w-6 text-primary" />
                     </div>
-                    <div className="flex gap-2">
+                    <div className="flex items-center gap-3">
+                      {/* Status Text */}
+                      <span
+                        className={`text-sm font-bold
+                          ${project.status === "Deployed" ? "text-green-600" : "text-yellow-600"}
+                        `}
+                      >
+                        {project.status}
+                      </span>
+
+                      {/* Icons */}
                       <a href={project.github} className="p-2 rounded-lg hover:bg-secondary transition-colors">
                         <Github className="h-5 w-5 text-muted-foreground hover:text-foreground" />
                       </a>
