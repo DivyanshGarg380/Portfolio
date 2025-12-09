@@ -46,7 +46,7 @@ export default function YoutubeSection(){
               <div className="glass rounded-2xl p-6">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                    <img src="../../public/yt.jpg" alt="Channel" className="w-full h-full rounded-full object-cover"/>
+                    <img src="/yt.jpg" alt="Channel" className="w-full h-full rounded-full object-cover"/>
                   </div>
                   <div>
                     <h3 className="font-bold text-lg">2.5 Minutes Of Aviation</h3>
