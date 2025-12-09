@@ -9,11 +9,11 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow" />
       <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl animate-pulse-slow delay-300" />
       {/* Grid Overlay */}
-      <div className = "absolute inset=0 bg=[linear-gradient(rgba(0,200,200,0.03)_1px, linear-gradient(90deg,rgba(0,200,200,0.03)_1px)] bg-[size:100px_100x]" />
+      <div className = "absolute inset-0 bg-[linear-gradient(rgba(0,200,200,0.03)_1px, linear-gradient(90deg,rgba(0,200,200,0.03)_1px)] bg-[size:100px_100x]" />
       <div className = "container mx-auto px-4 md:px-6 relative z-10">
         <div className = "max-w-4xl mx-auto text-center">
-          <div className = "animate=fade-up opacity-0" style = {{ animationDelay : "100ms" , animationFillMode: "forwards"}}>
-            <span className='inline-block px-4 py-2 rounded-full glasss text-sm text-muted-foreground mb-6'>
+          <div className = "animate-fade-up opacity-0" style = {{ animationDelay : "100ms" , animationFillMode: "forwards"}}>
+            <span className='inline-block px-4 py-2 rounded-full glass text-sm text-muted-foreground mb-6'>
               👋 Welcome to my corner of the internet
             </span>
           </div>
