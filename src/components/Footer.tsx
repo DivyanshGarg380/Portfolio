@@ -7,7 +7,7 @@ export default function Footer(){
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Your Name. All rights reserved.
+            © {currentYear} Divyansh Garg. All rights reserved.
           </p>
         <p className="text-sm text-muted-foreground flex items-center gap-1">
           V1.... Rotate ᯓ ✈︎
