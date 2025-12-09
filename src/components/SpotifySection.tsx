@@ -1,4 +1,5 @@
 import { Music, Play, ExternalLink } from "lucide-react";
+import { useState } from "react";
 
 const topTracks = [
   { title: "The Less I Know The Better", artist: "Tame Impala", duration: "3:36", id: "4Wa1TSeIpFVzPkSACAUmHd" },
@@ -15,6 +16,20 @@ const favSongs = [
 ];
 
 export default function SpotifySection() {
+
+  const [currentImage, setCurrentImage] = useState(null);
+  async function fetchArtwork(id) {
+    try {
+      const res = await fetch(`https://spotify-image-api.vercel.app/track/${id}`);
+      const data = await res.json();
+      setCurrentImage(data.image);
+    } catch (e) {
+      console.log("Error getting artwork", e);
+    }
+  }
+
+
+
   return (
     <section id="spotify" className="py-24 md:py-32 relative bg-secondary/20">
       <div className="container mx-auto px-4 md:px-6">
@@ -41,15 +56,17 @@ export default function SpotifySection() {
 
                 <div className="space-y-2">
                   {topTracks.map((track, index) => (
-                    <iframe
-                      src={`https://open.spotify.com/embed/track/${track.id}`}
-                      width="100%"
-                      height="152"
-                      frameBorder="0"
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                      loading="lazy"
-                      className="rounded-xl"
-                    />
+                    <div key = {track.id} onClick = {() => fetchArtwork(track.id)} className = "cursor-pointer">
+                      <iframe
+                        src={`https://open.spotify.com/embed/track/${track.id}`}
+                        width="100%"
+                        height="152"
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                        className="rounded-xl"
+                      />
+                    </div>
                   ))}
                 </div>
               </div>
@@ -64,33 +81,18 @@ export default function SpotifySection() {
                 
                 <div className="space-y-3">
                   {favSongs.map((playlist, index) => (
-                    <iframe
-                      src={`https://open.spotify.com/embed/track/${playlist.id}`}
-                      width="100%"
-                      height="152"
-                      frameBorder="0"
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                      loading="lazy"
-                      className="rounded-xl"
-                    />
+                    <div key = {playlist.id} onClick = {() =>  fetchArtwork(playlist.id)} className = "cursor-pointer">
+                      <iframe
+                        src={`https://open.spotify.com/embed/track/${playlist.id}`}
+                        width="100%"
+                        height="152"
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                        className="rounded-xl"
+                      />
+                    </div>
                   ))}
-                </div>
-              </div>
-
-              {/* Currently Playing (Placeholder) */}
-              <div className="glass rounded-2xl p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-sm text-muted-foreground">Now Playing</span>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-primary/30 to-accent/30 flex items-center justify-center animate-spin-slow">
-                    <Music className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Not Playing</p>
-                  </div>
                 </div>
               </div>
             </div>
