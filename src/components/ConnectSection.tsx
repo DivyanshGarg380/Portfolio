@@ -31,11 +31,10 @@ export default function ConnectSection() {
               <h3 className="text-xl font-bold mb-6">Send a Message</h3>
               <form
                 className="space-y-4"
-                action="https://formsubmit.co/himynameisdivyansh@gmail.com"
+                action="https://formsubmit.co/b0924cc51a62ae6f9bcd306fe6eadc3a"
                 method="POST"
               >
                 <input type="hidden" name="_captcha" value="false" />
-
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
