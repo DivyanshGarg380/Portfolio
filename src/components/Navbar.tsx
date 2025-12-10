@@ -12,7 +12,6 @@ const navLinks = [
   {href : "#spotify", label: "Spotify"},
   {href : "#hobbies", label: "Hobbies"},
   {href : "#connect", label: "Connect"},
-  {href : "/avgeek" , label: "Avgeek"},
 ];
 
 const Navbar = () => {
