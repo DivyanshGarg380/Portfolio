@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Avgeek from "./pages/avgeek"
+import Avgeek from "./pages/Avgeek"
 
 export default function App() {
   return (
