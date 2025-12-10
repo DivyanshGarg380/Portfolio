@@ -3,7 +3,6 @@ import { useState, useEffect, use } from "react";
 import { Button } from "@/components/ui/button";
 import { Sun, Moon, X , Menu} from "lucide-react";
 
-
 const navLinks = [
   {href : "#about", label: "About"},
   {href : "#education", label: "Education"},
@@ -13,6 +12,7 @@ const navLinks = [
   {href : "#spotify", label: "Spotify"},
   {href : "#hobbies", label: "Hobbies"},
   {href : "#connect", label: "Connect"},
+  {href : "/avgeek" , label: "Avgeek"},
 ];
 
 const Navbar = () => {
