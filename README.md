@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Personal Portfolio 
 
 A modern, responsive **personal portfolio website** built using **TypeScript** and **TailwindCSS**.  
 It showcases my skills, projects, and experience with a clean and minimal UI.
