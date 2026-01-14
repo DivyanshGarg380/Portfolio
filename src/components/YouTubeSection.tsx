@@ -2,9 +2,9 @@ import { Youtube, Play, Users, Video, ThumbsUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const channelStats = [
-  { icon: Users, value: "200+", label: "Subscribers" },
-  { icon: Video, value: "90+", label: "Videos" },
-  { icon: ThumbsUp, value: "278K+", label: "Total Views" },
+  { icon: Users, value: "250+", label: "Subscribers" },
+  { icon: Video, value: "100+", label: "Videos" },
+  { icon: ThumbsUp, value: "378K+", label: "Total Views" },
 ];
 
 export default function YoutubeSection(){
